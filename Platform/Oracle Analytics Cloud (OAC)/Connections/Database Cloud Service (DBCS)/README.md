@@ -15,6 +15,7 @@ This document goes over how to create a connection between an OAC and DBCS insta
  2. Port - 1521 (Default for Oracle Databases)
  3. Service Name - <Database Unique Name>.<Host Domain Name>
  4. Username and Password - in relation to user created/existing in the Oracle Database
+2. f
 
 
 ## Actual Steps:
