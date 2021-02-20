@@ -11,11 +11,10 @@ This document goes over how to create a connection between an OAC and DBCS insta
  ![alt text](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Connections/Database%20Cloud%20Service%20(DBCS)/Images/OAC_IPAddress.png)
 ### DBCS:
 1. Collect Host, Port, Service Name, Username and Password
-  1. Host - Public IP Address
-  2. Port - 1521 (Default for Oracle Databases)
- 3. Service Name - <Database Unique Name>.<Host Domain Name>
- 4. Username and Password - in relation to user created/existing in the Oracle Database
-2. f
+1a. Host - Public IP Address
+1b.Port - 1521 (Default for Oracle Databases)
+1c. Service Name - <Database Unique Name>.<Host Domain Name>
+1d. Username and Password - in relation to user created/existing in the Oracle Database
 
 
 ## Actual Steps:
