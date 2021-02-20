@@ -15,6 +15,9 @@ This document goes over how to create a connection between an OAC and DBCS insta
    2. Port - 1521 (Default for Oracle Databases)
    3. Service Name - 'Database Unique Name'.'Host Domain Name'
    4. Username and Password - In relation to user created/existing in the Oracle Database
+2. Create a Security Rule in the Security List for the Subnet that the Oracle Database is residing in to allow traffic from the OAC instance to the Oracle Database
+   1. Go to the Security List for the Subnet/VCN that the Oracle Database is residing in:
+   2. Create a Stateful TCP Ingress Rule, where Source is the OAC CIDR Range/IP Address and Destination Port is 1521 for the Database
 
 
 ## Actual Steps:
