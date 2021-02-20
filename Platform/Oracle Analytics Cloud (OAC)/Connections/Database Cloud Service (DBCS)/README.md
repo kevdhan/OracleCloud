@@ -13,7 +13,7 @@ This document goes over how to create a connection between an OAC and DBCS insta
 1. Collect Host, Port, Service Name, Username and Password
    1. Host - Public IP Address
    2. Port - 1521 (Default for Oracle Databases)
-   3. Service Name - <Database Unique Name>.<Host Domain Name>
+   3. Service Name - '<Database Unique Name>'.'<Host Domain Name>'
    4. Username and Password - in relation to user created/existing in the Oracle Database
 
 
