@@ -22,3 +22,8 @@ This document goes over how to create a connection between an OAC and DBCS insta
 
 ## Actual Steps:
 * Putting it all together...
+
+
+Documents:
+* https://docs.oracle.com/en/cloud/paas/analytics-cloud/acsom/administer-services-analytics-cloud.html#GUID-07F4764C-8111-42E7-8138-4FD3C19BA5CA 
+* https://docs.oracle.com/en/cloud/paas/analytics-cloud/acoci/manage-service-access-and-security.html#GUID-E66175DD-774D-43D0-9D53-374DAFBB0B69
