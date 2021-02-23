@@ -17,14 +17,16 @@ This document goes over how to create a connection between an OAC and DBCS insta
    4. Service Name - 'Database Unique Name'.'Host Domain Name'
       ![alt text](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Connections/Database%20Cloud%20Service%20(DBCS)/Images/DB_DatabaseUniqueName_HostDomainName.png)
    6. Username and Password - In relation to user created/existing in the Oracle Database
-2. Create a Security Rule in the Security List for the Subnet that the Oracle Database is residing in to allow traffic from the OAC instance to the Oracle Database
-   ![alt text](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Connections/Database%20Cloud%20Service%20(DBCS)/Images/SecurityRule_DB1521.png)
-   1. Go to the Security List for the Subnet/VCN that the Oracle Database is residing in:
-   2. Create a Stateful TCP Ingress Rule, where Source is the OAC CIDR Range/IP Address and Destination Port is 1521 for the Database
-
 
 ## (2) Actual Steps:
-* Putting it all together...
+* Putting it all together!
+### (2a) Security Rule (Firewall Rule) for DBCS:
+1. Create a Security Rule in the Security List for the Subnet that the Oracle Database is residing in to allow traffic from the OAC instance to the Oracle Database
+   ![alt text](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Connections/Database%20Cloud%20Service%20(DBCS)/Images/SecurityRule_DB1521.png)
+   1. Go to the Security List for the Subnet/VCN that the Oracle Database is residing in:
+   2. Create a Stateful TCP Ingress Rule, where Source is the **OAC CIDR Range/IP Address** and **Destination Port is 1521** for the Database
+### (2b) OAC:
+1. Create a Connection in the OAC instance for "Oracle Database". Here, you will insert the information you collected in the [create an anchor](### (1b) DBCS:)
 
 
 Documents:
