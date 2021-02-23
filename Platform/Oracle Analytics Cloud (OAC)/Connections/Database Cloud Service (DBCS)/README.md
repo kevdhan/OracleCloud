@@ -1,15 +1,15 @@
 # DBCS (Oracle Database Cloud Service Connection to OAC)
 This document goes over how to create a connection between an OAC and DBCS instance.
 
-## Pre-Requesites:
+## (1) Pre-Requesites:
 * Before beginning, you need to collect some information about your Oracle Analytics Instance and Oracle Database Instance.
   * Here are some basic facts about the OAC and DBCS environment:
     * OAC - a Public Oracle Analytics Instance
     * DBCS - a Public Oracle Database 19c running on a VM (Shape - VM.Standard2.1)
-### OAC:
+### (1a) OAC:
 1. Collect Gateway IP Address: 
  ![alt text](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Connections/Database%20Cloud%20Service%20(DBCS)/Images/OAC_IPAddress.png)
-### DBCS:
+### (1b) DBCS:
 1. Collect Host, Port, Service Name, Username and Password
    1. Host - Public IP Address
    2. Port - 1521 (Default for Oracle Databases)
@@ -20,7 +20,7 @@ This document goes over how to create a connection between an OAC and DBCS insta
    2. Create a Stateful TCP Ingress Rule, where Source is the OAC CIDR Range/IP Address and Destination Port is 1521 for the Database
 
 
-## Actual Steps:
+## (2) Actual Steps:
 * Putting it all together...
 
 
