@@ -26,7 +26,7 @@ This document goes over how to create a connection between an OAC and DBCS insta
    1. Go to the Security List for the Subnet/VCN that the Oracle Database is residing in:
    2. Create a Stateful TCP Ingress Rule, where Source is the **OAC CIDR Range/IP Address** and **Destination Port is 1521** for the Database
 ### (2b) OAC:
-1. Create a Connection in the OAC instance for "Oracle Database". Here, you will insert the information you collected in the Pre-Req (1b) DBCS Section.
+1. Create a Connection in the OAC instance for "Oracle Database". Here, you will insert the information you collected in the [Pre-Req (1b) DBCS Section](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Connections/Database%20Cloud%20Service%20(DBCS)/README.md#1b-dbcs).
  ![alt text](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Connections/Database%20Cloud%20Service%20(DBCS)/Images/OAC_Connection.png)
 2. Once establishing the connection, you can access the Database / your Schemas, Tables, Data, etc. by Creating a Data Set. You should see a new Database icon with the Connection Name you selected in step 1. Click on the icon to create a dataset from the newly created Database Connection
  ![alt text](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Connections/Database%20Cloud%20Service%20(DBCS)/Images/OAC_CreateDataSet.png)
