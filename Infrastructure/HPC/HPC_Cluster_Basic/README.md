@@ -1,5 +1,6 @@
 # HPC Cluster Basic
-This tutorial will go over how to deploy an Oracle HPC Cluster using Oracle's Cloud Marketplace. Additional topics include:
+This tutorial will go over how to deploy an Oracle HPC Cluster using Oracle's Cloud Marketplace. It will roughly follow this tutorial: [HPC - Siemens STAR-CCM](https://apexapps.oracle.com/pls/apex/dbpm/r/livelabs/workshop-attendee-2?p210_workshop_id=681&p210_type=3&session=1552025360481) 
+Additional topics include:
 * How to utilize Oracle Cloud (OCI) CLI commands and Terraform to work with the HPC Cluster
 * Run OpenFoam Projects on the HPC Cluster
 * Run OpenFoam Projects on a Standard Virtual Machine (Not a HPC Bare Metal Machine)
