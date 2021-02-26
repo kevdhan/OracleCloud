@@ -21,5 +21,11 @@ What's Included in the HPC Image (Architecture):
 [Image: HPC_Marketplace_Overview]
 2. Configure the Stack:
    1. Stack Information:
-      1. Give it a name, description, select your compartment. 
+      1. Give it a name, description, select your compartment.
+   [Image: HPCCluster_StackInformation]
+   2. Configure Variables - Choose the configurations for the HPC Cluster: desired compartment, AD, and SSH Key (copy and paste the public SSH Key created earlier)
+   [Image: HPCCluster_ConfigureVaraibles1]
+   3. Headnode Options - Choose the configurations for the Bastion Host: desired AD, Compute Detail (OCPU, Boot Volume Size)
+      1. 
+ 
 
