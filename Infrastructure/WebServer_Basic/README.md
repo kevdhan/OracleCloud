@@ -192,8 +192,8 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
    Locate Bastion Host and Web Server Private Key and for both private keys
    
    Enter the command: “chmod 400 <private key>”
-  
-  This sets the file permission so that only you can read the file
+   
+   This sets the file permission so that only you can read the file
   
 ii.	SSH-Agent:
 Use ssh-agent to store the Web Server Private Key. This will allow best practice security, by storing the Web Server key on your local machine (not on your Bastion Host). 
