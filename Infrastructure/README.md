@@ -8,3 +8,6 @@ Currently, due to lack of resources creation of the HPC Cluster stack is not doa
 This is a tutorial going over how to create a Web Server Application on OCI. Rather than focusing on web development, this tutorial will focus more on how to create the infrastructure (Networks, Subnets, Setting up firewall/security rules, Virtual Machine to host the Web Server, Bastion Host - kind of like a proxy server, and more!).
 
 In its current nature, the process is a bit on the manual side, but eventually a Terraform side will be uploaded!
+
+## Subnetting
+This is a tutorial going over IP Addresses and Ranges in Networks and Subnets.
