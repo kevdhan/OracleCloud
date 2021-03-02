@@ -22,8 +22,9 @@ Coming soon…
 
 # Steps...
 ## (1) Create Virtual Cloud Network
-Utilize the “Start VCN Wizard” to create a bundled VCN with Internet Connectivity (includes Public/Private Subnet, Internet/NAT/Service Gateway, etc.). This option allows you to create a network with a few clicks versus having to build out everything by scratch.
+**Goal:** Utilize the “Start VCN Wizard” to create a bundled VCN with Internet Connectivity (includes Public/Private Subnet, Internet/NAT/Service Gateway, etc.). This option allows you to create a network with a few clicks versus having to build out everything by scratch.
 
+**Steps:**
 ![NetworkVCNWizard](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/NetworkVCNWizard.png)
 
 1. Create VCN using VCN Wizard
@@ -33,5 +34,26 @@ Utilize the “Start VCN Wizard” to create a bundled VCN with Internet Connect
 2. Give Basic Information like VCN Name and VCN/Subnet CIDR Blocks. Then click “Create”
 
 ## (2) Setup Subnets + Security Lists + Route Tables
+<span style="text-decoration: underline">**Goal:**</span> In total we will need **3 Regional Subnets** (2 Public, 1 Private), **3 Security Lists** (2 Public, 1 Private), and **2 Route Tables** (1 Public, 1 Private). 
+
+By Default, the VCN Wizard creates 1 Public and 1 Private Subnet, each with its own Security List and Route Table. Because the VCN Wizard creates 1 Public and Private Subnet and Security List, we will only need to create 1 additional Public Subnet and Security List.
+
+What we will do first (in this step), is create the skeleton. For example, we will create the security list, but not add security rules yet. We will come back to Security Lists and add the appropriate Security Rules once we’ve added our resources (i.e. Load Balancer, Web Server, Bastion Host) to our subnets.
+
+By default, the VCN Wizard creates 1 Private and 1 Public Route Table. The Private Route Table allows use of the NAT Gateway and Service Gateway, and the Public Route Table allows use of the Internet Gateway. For this tutorial, these route tables and rules are fine and so we will not create new ones.
+
+Overall Subnet + Security List + Route Table List:
+![Subnets_OverallView](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/Subnets_OverallView.png)
+
+![SecurityListOverview](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/SecurityListOverview.png)
+
+![Image: RouteTables](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/RouteTableOverview.png)
+
+* 2 Public Subnets:
+   * Default Public Subnet + Default Public Security List + Default Public Route Table for LOAD BALANCER
+   * Create New Public Subnet + New Public Security List + Default Public Route Table for BASTION HOST
+* 1 Private Subnets:
+   * Default Private Subnet + Default Private Security List + Default Private Route Table for WEB SERVER
+
 
 
