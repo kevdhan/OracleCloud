@@ -57,13 +57,15 @@ Overall Subnet + Security List + Route Table List:
 
 **(2b) Steps:**
 1. Create Security List (For Bastion Host Public Subnet):
+
    ![SecurityList_CreateSecurityList](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/SecurityList_CreateSecurityList.png)
-   1. i.	Click Create Security List
-   2. ii.	Choose a name for the Security List (e.g. “Security List for Public Subnet – Bastion Host”)
-   3. iii.	Leave rules for Ingress/Egress empty for now
-   4. iv.	Click Create
+   1. Click Create Security List
+   2. Choose a name for the Security List (e.g. “Security List for Public Subnet – Bastion Host”)
+   3. Leave rules for Ingress/Egress empty for now
+   4. Click Create
 
 2. Create Public Subnet (For Bastion Host):
+
    ![Subnets_CreateSubnet](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/Subnets_CreateSubnet.png)
    1. Click Create Subnet
    ![Subnets_CreateSubnet2](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/Subnets_CreateSubnet2.png)
