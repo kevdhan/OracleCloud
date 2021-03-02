@@ -89,19 +89,20 @@ Overall Subnet + Security List + Route Table List:
 3. Create Resources in Subnets: Web Server, Database, Load Balancer, Bastion Host
 Now that we have created the required network resources, we will start creating our Web Server, Load Balancer, and Bastion Host.
 
-   1. Web Server (Under Compute --> Instances)
+   **Web Server (Under Compute --> Instances)**
    
    ![WebServerVM_Preview](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/WebServerVM_Preview.png)
    
-      1. Choose a name for the VM Instance
-ii.	Select the compartment
-iii.	Select the Availability Domain
-iv.	Select the Image – for this example, Oracle Linux 7.9
-v.	Select the Shape – for this example, VM.Standard.E3.Flex (1 OCPU, 16 GB RAM)
-vi.	Select Networking – choose the VCN/Private Subnet created for the Web Server
-vii.	Add SSH Keys – Either create your own private/public SSH Keys and upload them or save the private/public SSH Keys Oracle Cloud generates for you.
+   1. Choose a name for the VM Instance
+   2. ii.	Select the compartment
+   3. iii.	Select the Availability Domain
+   4. iv.	Select the Image – for this example, Oracle Linux 7.9
+   5. v.	Select the Shape – for this example, VM.Standard.E3.Flex (1 OCPU, 16 GB RAM)
+   6. vi.	Select Networking – choose the VCN/Private Subnet created for the Web Server
+   7. vii.	Add SSH Keys – Either create your own private/public SSH Keys and upload them or save the private/public SSH Keys Oracle Cloud generates for you.
 viii.	Optional – Add a custom boot volume. For this example, we will leave this blank as this is the first time we are creating this Web Server/VM.
-ix.	Click Create
+   8. ix.	Click Create
+
 b.	Load Balancer (Under Networking  Load Balancer)
 i.	Add Details
 [Image: AddDetails_1]
