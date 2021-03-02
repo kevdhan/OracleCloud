@@ -22,19 +22,19 @@ Coming soon…
 
 # Steps...
 ## (1) Create Virtual Cloud Network
-**(1a) Goal:** Utilize the “Start VCN Wizard” to create a bundled VCN with Internet Connectivity (includes Public/Private Subnet, Internet/NAT/Service Gateway, etc.). This option allows you to create a network with a few clicks versus having to build out everything by scratch.
+###(1a) Goal: Utilize the “Start VCN Wizard” to create a bundled VCN with Internet Connectivity (includes Public/Private Subnet, Internet/NAT/Service Gateway, etc.). This option allows you to create a network with a few clicks versus having to build out everything by scratch.
 
-**(1b) Steps:**
+###(1b) Steps:
 ![NetworkVCNWizard](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/NetworkVCNWizard.png)
 
-(1b.1) Create VCN using VCN Wizard
+**(1b.1) Create VCN using VCN Wizard**
 
 ![NetworkVCNWizard_Preview](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/NetworkVCNWizard_Preview.png)
 
-(1b.2) Give Basic Information like VCN Name and VCN/Subnet CIDR Blocks. Then click “Create”
+**(1b.2) Give Basic Information like VCN Name and VCN/Subnet CIDR Blocks. Then click “Create”**
 
 ## (2) Setup Subnets + Security Lists + Route Tables
-**(2a) Goal:** In total we will need **3 Regional Subnets** (2 Public, 1 Private), **3 Security Lists** (2 Public, 1 Private), and **2 Route Tables** (1 Public, 1 Private). 
+###(2a) Goal: In total we will need **3 Regional Subnets** (2 Public, 1 Private), **3 Security Lists** (2 Public, 1 Private), and **2 Route Tables** (1 Public, 1 Private). 
 
 By Default, the VCN Wizard creates 1 Public and 1 Private Subnet, each with its own Security List and Route Table. Because the VCN Wizard creates 1 Public and Private Subnet and Security List, we will only need to create 1 additional Public Subnet and Security List.
 
