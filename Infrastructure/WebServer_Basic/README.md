@@ -27,11 +27,11 @@ Coming soon…
 **(1b) Steps:**
 ![NetworkVCNWizard](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/NetworkVCNWizard.png)
 
-1. Create VCN using VCN Wizard
+(1b.1) Create VCN using VCN Wizard
 
 ![NetworkVCNWizard_Preview](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/NetworkVCNWizard_Preview.png)
 
-2. Give Basic Information like VCN Name and VCN/Subnet CIDR Blocks. Then click “Create”
+(1b.2) Give Basic Information like VCN Name and VCN/Subnet CIDR Blocks. Then click “Create”
 
 ## (2) Setup Subnets + Security Lists + Route Tables
 **(2a) Goal:** In total we will need **3 Regional Subnets** (2 Public, 1 Private), **3 Security Lists** (2 Public, 1 Private), and **2 Route Tables** (1 Public, 1 Private). 
@@ -94,18 +94,20 @@ Now that we have created the required network resources, we will start creating 
    ![WebServerVM_Preview](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/WebServerVM_Preview.png)
    
    1. Choose a name for the VM Instance
-   2. ii.	Select the compartment
-   3. iii.	Select the Availability Domain
-   4. iv.	Select the Image – for this example, Oracle Linux 7.9
-   5. v.	Select the Shape – for this example, VM.Standard.E3.Flex (1 OCPU, 16 GB RAM)
-   6. vi.	Select Networking – choose the VCN/Private Subnet created for the Web Server
-   7. vii.	Add SSH Keys – Either create your own private/public SSH Keys and upload them or save the private/public SSH Keys Oracle Cloud generates for you.
+   2. Select the compartment
+   3. Select the Availability Domain
+   4. Select the Image – for this example, Oracle Linux 7.9
+   5. Select the Shape – for this example, VM.Standard.E3.Flex (1 OCPU, 16 GB RAM)
+   6. Select Networking – choose the VCN/Private Subnet created for the Web Server
+   7. Add SSH Keys – Either create your own private/public SSH Keys and upload them or save the private/public SSH Keys Oracle Cloud generates for you.
 viii.	Optional – Add a custom boot volume. For this example, we will leave this blank as this is the first time we are creating this Web Server/VM.
-   8. ix.	Click Create
+   8. Click Create
 
-b.	Load Balancer (Under Networking  Load Balancer)
-i.	Add Details
-[Image: AddDetails_1]
+   **Load Balancer (Under Networking --> Load Balancer)**
+   1. Add Details
+   
+   ![Image: AddDetails_1]
+   
 1.	Choose a name for the Load Balancer
 2.	Select Public Load Balancer
 3.	Select Ephemeral IP Address (Reserved IP Address if you have an existing IP Address)
