@@ -22,9 +22,9 @@ Coming soon…
 
 # Steps...
 ## (1) Create Virtual Cloud Network
-**Goal:** Utilize the “Start VCN Wizard” to create a bundled VCN with Internet Connectivity (includes Public/Private Subnet, Internet/NAT/Service Gateway, etc.). This option allows you to create a network with a few clicks versus having to build out everything by scratch.
+**(1a) Goal:** Utilize the “Start VCN Wizard” to create a bundled VCN with Internet Connectivity (includes Public/Private Subnet, Internet/NAT/Service Gateway, etc.). This option allows you to create a network with a few clicks versus having to build out everything by scratch.
 
-**Steps:**
+**(1b) Steps:**
 ![NetworkVCNWizard](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/NetworkVCNWizard.png)
 
 1. Create VCN using VCN Wizard
@@ -34,7 +34,7 @@ Coming soon…
 2. Give Basic Information like VCN Name and VCN/Subnet CIDR Blocks. Then click “Create”
 
 ## (2) Setup Subnets + Security Lists + Route Tables
-**Goal:** In total we will need **3 Regional Subnets** (2 Public, 1 Private), **3 Security Lists** (2 Public, 1 Private), and **2 Route Tables** (1 Public, 1 Private). 
+**(2a) Goal:** In total we will need **3 Regional Subnets** (2 Public, 1 Private), **3 Security Lists** (2 Public, 1 Private), and **2 Route Tables** (1 Public, 1 Private). 
 
 By Default, the VCN Wizard creates 1 Public and 1 Private Subnet, each with its own Security List and Route Table. Because the VCN Wizard creates 1 Public and Private Subnet and Security List, we will only need to create 1 additional Public Subnet and Security List.
 
@@ -55,15 +55,14 @@ Overall Subnet + Security List + Route Table List:
 * 1 Private Subnets:
    * Default Private Subnet + Default Private Security List + Default Private Route Table for WEB SERVER
 
-**Steps:**
+**(2b) Steps:**
 1. Create Security List (For Bastion Host Public Subnet):
-
    ![SecurityList_CreateSecurityList](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/SecurityList_CreateSecurityList.png)
-
    1. i.	Click Create Security List
    2. ii.	Choose a name for the Security List (e.g. “Security List for Public Subnet – Bastion Host”)
    3. iii.	Leave rules for Ingress/Egress empty for now
    4. iv.	Click Create
+
 2. Create Public Subnet (For Bastion Host):
    ![Subnets_CreateSubnet](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/Subnets_CreateSubnet.png)
    1. Click Create Subnet
