@@ -188,20 +188,23 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
    
    [Image: BastionHost_SSH_chmood400]
    
-   1. Permissions for Web Server and Bastion Private Keys:
-   Locate Bastion Host and Web Server Private Key and for both private keys
-   
-   Enter the command: “chmod 400 <private key>”
-   
-   This sets the file permission so that only you can read the file
+   **Permissions for Web Server and Bastion Private Keys:***
+   1. Locate Bastion Host and Web Server Private Key and for both private keys
+   2. Enter the command: “chmod 400 <private key>”
+   3. This sets the file permission so that only you can read the file
   
-ii.	SSH-Agent:
-Use ssh-agent to store the Web Server Private Key. This will allow best practice security, by storing the Web Server key on your local machine (not on your Bastion Host). 
-[Image: WebServer_KeyAgent]
-1.	To enable loading keys in the agent, locate your ssh config file in: “~/.ssh/config” and add: “AddKeysToAgent yes”
-[Image: WebServer_SSH_AddAgent]
-2.	To add keys to the agent, Enter the command: “ssh-add [path of Web Server Private Key]”
-b.	SSH into Bastion Host:
+   **SSH-Agent:**
+   Use ssh-agent to store the Web Server Private Key. This will allow best practice security, by storing the Web Server key on your local machine (not on your Bastion Host). 
+   
+   [Image: WebServer_KeyAgent]
+   
+   1.	To enable loading keys in the agent, locate your ssh config file in: “~/.ssh/config” and add: “AddKeysToAgent yes”
+   
+   [Image: WebServer_SSH_AddAgent]
+   
+   2.	To add keys to the agent, Enter the command: “ssh-add [path of Web Server Private Key]”
+ 
+2. SSH into Bastion Host:
 [Image: BastionHost_PublicIPAddress]
 i.	Locate the public IP Address of your Bastion Host
 [Image: BastionHost_SSH]
