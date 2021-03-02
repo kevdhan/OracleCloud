@@ -86,7 +86,54 @@ Overall Subnet + Security List + Route Table List:
    10. Select Corresponding Security List (Select newly created Security List)
    11. Click Create
 
-3. 
+3. Create Resources in Subnets: Web Server, Database, Load Balancer, Bastion Host
+Now that we have created the required network resources, we will start creating our Web Server, Load Balancer, and Bastion Host.
+
+   1. Web Server (Under Compute --> Instances)
+   
+   ![WebServerVM_Preview](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/WebServerVM_Preview.png)
+   
+      1. Choose a name for the VM Instance
+ii.	Select the compartment
+iii.	Select the Availability Domain
+iv.	Select the Image – for this example, Oracle Linux 7.9
+v.	Select the Shape – for this example, VM.Standard.E3.Flex (1 OCPU, 16 GB RAM)
+vi.	Select Networking – choose the VCN/Private Subnet created for the Web Server
+vii.	Add SSH Keys – Either create your own private/public SSH Keys and upload them or save the private/public SSH Keys Oracle Cloud generates for you.
+viii.	Optional – Add a custom boot volume. For this example, we will leave this blank as this is the first time we are creating this Web Server/VM.
+ix.	Click Create
+b.	Load Balancer (Under Networking  Load Balancer)
+i.	Add Details
+[Image: AddDetails_1]
+1.	Choose a name for the Load Balancer
+2.	Select Public Load Balancer
+3.	Select Ephemeral IP Address (Reserved IP Address if you have an existing IP Address)
+4.	Selected the Bandwidth (Shape) – for this example, Dynamic Shape: Small / 100 Mbps
+[Image: AddDetails_2]
+5.	Select Networking – choose the VCN/Public Subnet created for the Load Balancer
+ii.	Choose Backends
+When adding the Web Server as the backend, the Load Balancer Wizard will automatically add the necessary Security Rules to the Load Balancer Security List and Web Server Security List.
+[Image: ChooseBackends]
+1.	Select Load Balancing Policy – for this example, Weighted Round Robin
+2.	Click Add Backends and select the Web Server VM Instance.
+3.	Select Health Check Policy – for this example, keep the default (i.e. HTTP, Port 80, etc.)
+iii.	Configure Listener
+[Image: ConfigureListener]
+1.	Choose a name for the Listener
+2.	Select Traffic Type – for this example, HTTP / Port 80 will be used.
+3.	Click Submit
+c.	Bastion Host – similar process to creating Web Server VM
+[Image: BastionHost_VMPreview]
+i.	Choose a name for the VM Instance
+ii.	Select the compartment
+iii.	Select the Availability Domain
+iv.	Select the Image – for this example, Oracle Linux 7.9
+v.	Select the Shape – for this example, VM.Standard.E2.1.Micro
+vi.	Select Networking – choose the VCN/Public Subnet created for the Bastion Host
+vii.	Add SSH Keys – Either create your own private/public SSH Keys and upload them or save the private/public SSH Keys Oracle Cloud generates for you.
+viii.	Optional – Add a custom boot volume. For this example, we will leave this blank as this is the first time we are creating this Bastion Host.
+ix.	Click Create
+
 
 
 
