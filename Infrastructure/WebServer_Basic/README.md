@@ -34,7 +34,7 @@ Coming soon…
 2. Give Basic Information like VCN Name and VCN/Subnet CIDR Blocks. Then click “Create”
 
 ## (2) Setup Subnets + Security Lists + Route Tables
-<span style="text-decoration: underline">**Goal:**</span> In total we will need **3 Regional Subnets** (2 Public, 1 Private), **3 Security Lists** (2 Public, 1 Private), and **2 Route Tables** (1 Public, 1 Private). 
+**Goal:** In total we will need **3 Regional Subnets** (2 Public, 1 Private), **3 Security Lists** (2 Public, 1 Private), and **2 Route Tables** (1 Public, 1 Private). 
 
 By Default, the VCN Wizard creates 1 Public and 1 Private Subnet, each with its own Security List and Route Table. Because the VCN Wizard creates 1 Public and Private Subnet and Security List, we will only need to create 1 additional Public Subnet and Security List.
 
@@ -54,6 +54,36 @@ Overall Subnet + Security List + Route Table List:
    * Create New Public Subnet + New Public Security List + Default Public Route Table for BASTION HOST
 * 1 Private Subnets:
    * Default Private Subnet + Default Private Security List + Default Private Route Table for WEB SERVER
+
+**Steps:**
+1. Create Security List (For Bastion Host Public Subnet):
+
+   ![SecurityList_CreateSecurityList](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/SecurityList_CreateSecurityList.png)
+
+   1. i.	Click Create Security List
+   2. ii.	Choose a name for the Security List (e.g. “Security List for Public Subnet – Bastion Host”)
+   3. iii.	Leave rules for Ingress/Egress empty for now
+   4. iv.	Click Create
+2. Create Public Subnet (For Bastion Host):
+   ![Subnets_CreateSubnet](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/Subnets_CreateSubnet.png)
+   1. Click Create Subnet
+   ![Subnets_CreateSubnet2](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/Subnets_CreateSubnet2.png)
+   2. Choose a name
+   3. Choose the compartment
+   4. Select Subnet Type: Regional
+   5. Choose the CIDR Block (Make sure its within your VCN CIDR Block and NOT overlapping with other subnets)
+   6. Select Corresponding Route Table (Default Public Route Table if Public Subnet)
+   7. Select Public Subnet
+   ![Subnets_CreateSubnet3](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/Network/Subnets_CreateSubnet3.png)
+   8. Leave default DNS Options
+   9. Select Default DHCP Options
+   10. Select Corresponding Security List (Select newly created Security List)
+   11. Click Create
+
+3. 
+
+
+
 
 
 
