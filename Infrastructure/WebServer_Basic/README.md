@@ -288,7 +288,7 @@ In this step, now that we are inside the Web Server VM, we will install and conf
    
    ![Image: WebServer_PHP4](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP4.png)
 
-   6. Test the connection by going to your browser of choice and connecting to: “http://<Public IP of Load Balancer>/info.php”
+   6. Test the connection by going to your browser of choice and connecting to: http://"Public IP of Load Balancer"/info.php
 
 **(2b.6)	End – we have successfully created a network that hosts a private Web Server/Application that is accessed through a Public Load Balancer.**
 Future extensions to this tutorial will include adding a second Web Application to fully see the capabilities of the load balancer, a private backend database for the Application, and more!
