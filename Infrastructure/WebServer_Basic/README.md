@@ -204,7 +204,7 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
 
 2. SSH-Agent:
 
-Use ssh-agent to store the Web Server Private Key. This will allow best practice security, by storing the Web Server key on your local machine (not on your Bastion Host). 
+   Use ssh-agent to store the Web Server Private Key. This will allow best practice security, by storing the Web Server key on your local machine (not on your Bastion Host). 
 
    ![Image: WebServer_KeyAgent](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/SSH/WebServer_KeyAgent.png)
 
