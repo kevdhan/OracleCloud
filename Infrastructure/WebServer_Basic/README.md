@@ -192,10 +192,11 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
    
    **Permissions for Web Server and Bastion Private Keys:***
    1. Locate Bastion Host and Web Server Private Key and for both private keys
-   2. Enter the command: “chmod 400 <private key>”
+   2. Enter the command: “chmod 400 (private key)”
    3. This sets the file permission so that only you can read the file
   
    **SSH-Agent:**
+   
    Use ssh-agent to store the Web Server Private Key. This will allow best practice security, by storing the Web Server key on your local machine (not on your Bastion Host). 
    
    ![Image: WebServer_KeyAgent](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/SSH/WebServer_KeyAgent.png)
@@ -214,7 +215,8 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
 
    ![Image: BastionHost_SSH](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/BastionHost/SSH/BastionHost_SSH.png)
 
-   2. Enter the command: “ssh -A -i <private key> <username>@<public IP Address>
+   2. Enter the command: “ssh -A -i (private key) (username)@(public IP Address)"
+   
    Username = “opc” (this is the admin user and used because this is the first time we are logging into the Bastion)
 
 3. From Bastion Host, SSH into the Web Server
@@ -225,7 +227,7 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
 
    ![Image: WebServer_SSH_BastiontoWeb](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/SSH/WebServer_SSH_BastiontoWeb.png)
 
-   2. Enter the command: “ssh -A <username>@<private IP Address>
+   2. Enter the command: “ssh -A (username)@(private IP Address)
    
    Username = “opc” (similar reason given in Bastion Host Section)
   
@@ -259,7 +261,7 @@ In this step, now that we are inside the Web Server VM, we will install and conf
    
    Enter the Command: “curl localhost”
    
-   Or connect to the public IP Address of the Load Balancer. Go to your browser of choice and enter 'http://<Public IP of Load Balancer>'
+   Or connect to the public IP Address of the Load Balancer. Go to your browser of choice and enter 'http://(Public IP of Load Balancer)'
 
    8. Apache has successfully been installed
 
