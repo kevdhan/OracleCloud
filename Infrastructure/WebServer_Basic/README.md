@@ -258,7 +258,7 @@ In this step, now that we are inside the Web Server VM, we will install and conf
    
    Enter the Command: “curl localhost”
    
-   Or connect to the public IP Address of the Load Balancer. Go to your browser of choice and enter “ http://<Public IP of Load Balancer> ”
+   Or connect to the public IP Address of the Load Balancer. Go to your browser of choice and enter 'http://<Public IP of Load Balancer>'
 
    8. Apache has successfully been installed
 
@@ -281,7 +281,9 @@ In this step, now that we are inside the Web Server VM, we will install and conf
    Edit the file, Enter the following text:
    
    " <?php
+   
     phpinfo();
+    
    ?> "
    
    ![Image: WebServer_PHP4](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP4.png)
