@@ -226,6 +226,7 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
    ![Image: WebServer_SSH_BastiontoWeb](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/SSH/WebServer_SSH_BastiontoWeb.png)
 
    2. Enter the command: “ssh -A <username>@<private IP Address>
+   
    Username = “opc” (similar reason given in Bastion Host Section)
   
    3. You are now logged into the private Web Server VM Instance.
@@ -294,7 +295,7 @@ In this step, now that we are inside the Web Server VM, we will install and conf
 Future extensions to this tutorial will include adding a second Web Application to fully see the capabilities of the load balancer, a private backend database for the Application, and more!
 
 
-Additional Info: Q&As, Documentations, References, etc.
+# Additional Info: Q&As, Documentations, References, etc.
 Why utilize Regional Subnets?
 •	Regional Subnets (Private/Public) will be created for best practice (Flexible Deployments/HA). [Documentation]
 o	Public Load Balancers specifically require a regional subnet or 2 AD Specific Subnets because of High Availability reasons. [Documentation]
