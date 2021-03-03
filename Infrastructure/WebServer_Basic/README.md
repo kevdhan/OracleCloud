@@ -281,9 +281,7 @@ In this step, now that we are inside the Web Server VM, we will install and conf
    Edit the file, Enter the following text:
    
    "<?php
-    
     phpinfo();
-   
    ?>"
    
    ![Image: WebServer_PHP4](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP4.png)
