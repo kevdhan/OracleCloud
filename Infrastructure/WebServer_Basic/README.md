@@ -272,7 +272,7 @@ In this step, now that we are inside the Web Server VM, we will install and conf
 
    2. Install PHP 7, Enter the command: “sudo yum install -y php”
  
-   [Image: WebServer_PHP3]
+   ![Image: WebServer_PHP3](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP3.png)
    
    3.	Restart Apache, Enter the command: “sudo systemctl restart httpd”
    4. Verify Installation, Enter the command: “php -v”
@@ -280,11 +280,11 @@ In this step, now that we are inside the Web Server VM, we will install and conf
 
    Edit the file, Enter the following text:
    
-   <?php
+   "<?php
     
     phpinfo();
    
-   ?>
+   ?>"
    
    ![Image: WebServer_PHP4](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP4.png)
 
