@@ -190,7 +190,7 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
    
    ![Image: BastionHost_SSH_chmod400](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/BastionHost/SSH/BastionHost_SSH_chmod400.png)
    
-   **Permissions for Web Server and Bastion Private Keys:***
+   **Permissions for Web Server and Bastion Private Keys:**
    1. Locate Bastion Host and Web Server Private Key and for both private keys
    2. Enter the command: “chmod 400 (private key)”
    3. This sets the file permission so that only you can read the file
@@ -299,19 +299,19 @@ Future extensions to this tutorial will include adding a second Web Application 
 
 # Additional Info: Q&As, Documentations, References, etc.
 Why utilize Regional Subnets?
-•	Regional Subnets (Private/Public) will be created for best practice (Flexible Deployments/HA). [Documentation]
-o	Public Load Balancers specifically require a regional subnet or 2 AD Specific Subnets because of High Availability reasons. [Documentation]
+* Regional Subnets (Private/Public) will be created for best practice (Flexible Deployments/HA). [Documentation](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/managingVCNs_topic-Overview_of_VCNs_and_Subnets.htm#Overview)
+* Public Load Balancers specifically require a regional subnet or 2 AD Specific Subnets because of High Availability reasons. [Documentation](https://docs.oracle.com/en-us/iaas/Content/Balance/Concepts/balanceoverview.htm)
 
 Chmod commands:
-•	What does “chmod 400” do?
-o	It changes the file permission so that only you can read it
-•	What does “chmod 700” do?
-o	Sets the permission to a file so that only the user/owner can read, write, and execute. 
-•	What does “chmod 600” do?
-o	Sets permissions so that user/owner can read and write, but cannot execute
+* What does “chmod 400” do?
+   * It changes the file permission so that only you can read it
+* What does “chmod 700” do?
+   * Sets the permission to a file so that only the user/owner can read, write, and execute. 
+* What does “chmod 600” do?
+   * Sets permissions so that user/owner can read and write, but cannot execute
 
 Bastion Host:
-•	Documentation – Covers what a Bastion Host, Oracle’s View on Them and why they support it, short tutorial, and more.
+* [Documentation](https://docs.oracle.com/en-us/iaas/Content/Resources/Assets/whitepapers/bastion-hosts.pdf) – Covers what a Bastion Host, Oracle’s View on Them and why they support it, short tutorial, and more.
 
 What are Health Check Policies and what does each Status mean?
-•	Working with Oracle Load Balancer Health Check Policies
+* [Working with Oracle Load Balancer Health Check Policies](https://docs.oracle.com/en-us/iaas/Content/Balance/Tasks/editinghealthcheck.htm#healthstatus)
