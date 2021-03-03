@@ -40,8 +40,10 @@ However, because Oracle reserves the first available usable Host IP Address for 
 So, for this example: (10.1.0.0+2) - (10.1.255.255-1) = **10.1.0.2 - 10.1.255.254**
 
 **Documentation**
+
 Here's a documentation from Azure ["Understand TCP/IP addressing and subnetting basics"](https://docs.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting#default-gateways) that further discusses IP addresses, subnet mask, and default gateway.
 
+Here's a documentation from Stack Exchange: [Calculating Addresses from IP Address and Mask](https://networkengineering.stackexchange.com/questions/7106/how-do-you-calculate-the-prefix-network-subnet-and-host-numbers)
 
 
 
