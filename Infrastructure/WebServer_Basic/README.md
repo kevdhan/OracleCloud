@@ -215,7 +215,7 @@ In this Section, we will SSH into the Bastion Host, then from there SSH into the
    2.	To add keys to the agent, Enter the command: “ssh-add [path of Web Server Private Key]”
 
 ### (5b) Steps:
-**(5b.1 SSH into Bastion Host:**
+**(5b.1) SSH into Bastion Host:**
    
 ![Image: BastionHost_PublicIPAddress](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/BastionHost/SSH/BastionHost_PublicIPAddress.png)
 
@@ -267,7 +267,7 @@ In this step, now that we are inside the Web Server VM, we will install and conf
 
 8. Apache has successfully been installed
 
-**(5b.4 Install and Configure PHP)
+**(5b.4) Install and Configure PHP)**
 
 ![Image: WebServer_PHP1](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP1.png)
 
