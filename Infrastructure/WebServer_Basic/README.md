@@ -263,20 +263,32 @@ In this step, now that we are inside the Web Server VM, we will install and conf
    8. Apache has successfully been installed
 
 5. Install and Configure PHP
-[Image: WebServer_PHP1]
-i.	Configure Oracle Linux package repos to use PHP 7, Enter the command: “sudo yum install -y oracle-php-release-el7”
-[Image: WebServer_PHP2]
-ii.	Install PHP 7, Enter the command: “sudo yum install -y php”
-[Image: WebServer_PHP3]
-iii.	Restart Apache, Enter the command: “sudo systemctl restart httpd”
-iv.	Verify Installation, Enter the command: “php -v”
-v.	Add a PHP test file to your instance, Enter the command: “sudo vi /var/www/html/info.php”
-1.	Edit the file, Enter the following text:
-<?php
+
+   ![Image: WebServer_PHP1](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP1.png)
+
+   1. Configure Oracle Linux package repos to use PHP 7, Enter the command: “sudo yum install -y oracle-php-release-el7”
+
+   ![Image: WebServer_PHP2](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP2.png)
+
+   2. Install PHP 7, Enter the command: “sudo yum install -y php”
+ 
+   [Image: WebServer_PHP3]
+   
+   3.	Restart Apache, Enter the command: “sudo systemctl restart httpd”
+   4. Verify Installation, Enter the command: “php -v”
+   5. Add a PHP test file to your instance, Enter the command: “sudo vi /var/www/html/info.php”
+
+   Edit the file, Enter the following text:
+   
+   <?php
+    
     phpinfo();
-?>
-[Image: WebServer_PHP4]
-vi.	Test the connection by going to your browser of choice and connecting to: “http://<Public IP of Load Balancer>/info.php”
+   
+   ?>
+   
+   ![Image: WebServer_PHP4](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/PHP/WebServer_PHP4.png)
+
+   6. Test the connection by going to your browser of choice and connecting to: “http://<Public IP of Load Balancer>/info.php”
 
 **(2b.6)	End – we have successfully created a network that hosts a private Web Server/Application that is accessed through a Public Load Balancer.**
 Future extensions to this tutorial will include adding a second Web Application to fully see the capabilities of the load balancer, a private backend database for the Application, and more!
