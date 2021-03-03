@@ -247,13 +247,17 @@ In this step, now that we are inside the Web Server VM, we will install and conf
    ![Image: WebServer_AddIndexHTML](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/Apache/WebServer_AddIndexHTML.png)
    
    6. Add an index.html file, Enter the Commands:
+   
    “sudo su”
+   
    “echo ‘WebServer Demo’ >/var/www/html/index.html”
 
    ![Image: WebServer_ActualSite](https://github.com/kevdhan/OracleCloud/blob/main/Infrastructure/WebServer_Basic/Images/WebServer/Apache/WebServer_ActualSite.png)
    
    7. Test the web server by:
+   
    Enter the Command: “curl localhost”
+   
    Or connect to the public IP Address of the Load Balancer. Go to your browser of choice and enter “http://<Public IP of Load Balancer>”
 
    8. Apache has successfully been installed
