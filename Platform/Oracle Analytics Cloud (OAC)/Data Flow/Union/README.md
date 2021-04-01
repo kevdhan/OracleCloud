@@ -58,5 +58,19 @@ Lets begin!!
 ## Actual Steps
 
 ### Steps A: Data Flow + Unionization
+First, we'll create the Data Flow to unionize our datasets.
+
+![A_OverallArchitecture](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_OverallArchitecture.png)
+
+Here is the overall finalized Data Flow Architecture! Lets begin the work to build this out!
+
+Let's begin!!
+![A_CreateDataFlow](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_CreateDataFlow.png)
+1. Click Create a Data Flow, then Add “AggregatedWeatherData”.
+
+![A_DataFlowPage](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_DataFlowPage.png)
+2. Before moving on, I’ll explain the Data Flow page. 
+
+
 
 ### Steps B: Testing Data Flow with new Weather Data + Scheduling the Data Flow
