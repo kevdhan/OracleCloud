@@ -65,6 +65,7 @@ First, we'll create the Data Flow to unionize our datasets.
 Here is the overall finalized Data Flow Architecture! Lets begin the work to build this out!
 
 Let's begin!!
+
 ![A_CreateDataFlow](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_CreateDataFlow.png)
 1. Click Create a Data Flow, then Add “AggregatedWeatherData”.
 
