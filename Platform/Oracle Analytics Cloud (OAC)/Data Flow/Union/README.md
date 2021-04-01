@@ -42,4 +42,19 @@ Lets begin!!
    
    2. Edit “Name” Column – split column on Delimiter “,” , and create 2 new columns: “Zip Code” and “Country”. We do this to create more meaningful columns.
 
+   ![Prereq_Delete](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/Prereq_Delete.png)
+   
+   3. Delete the Name Column, we do not need this column anymore.
+
+   ![Prereq_Edit_1](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/Prereq_Edit_1.png)
+   ![Prereq_Edit_2](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/Prereq_Edit_2.png)
+   
+   4. Edit “Wind Chill” Column – add a PL/SQL based expression where if null, replace it with the number value “0”
+   5. Review change, Apply Script
+
+3. Upload December Data as "NewWeatherData"
+   1. We'll hold off on any transformations for now!
+
+
+
 
