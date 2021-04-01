@@ -55,6 +55,8 @@ Lets begin!!
 3. Upload December Data as "NewWeatherData"
    1. We'll hold off on any transformations for now!
 
+## Actual Steps
 
+### Steps A: Data Flow + Unionization
 
-
+### Steps B: Testing Data Flow with new Weather Data + Scheduling the Data Flow
