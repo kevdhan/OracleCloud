@@ -32,3 +32,14 @@ Lets begin!!
 ![Prereq_Aggregated](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/Prereq_Aggregated.png)
 
 2. Upload November Data as "AggregatedWeatherData"
+   
+   ![Prereq_PrepareAggregated](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/Prereq_PrepareAggregated.png)
+   
+   1. Prepare it – Perform Transformations. Click on the “AggregatedWeatherData” dataset, then click “Prepare”
+
+   ![Prereq_Split_1](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/Prereq_Split_1.png)
+   ![Prereq_Split_2](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/Prereq_Split_2.png)
+   
+   2. Edit “Name” Column – split column on Delimiter “,” , and create 2 new columns: “Zip Code” and “Country”. We do this to create more meaningful columns.
+
+
