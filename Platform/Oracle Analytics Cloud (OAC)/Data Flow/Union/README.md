@@ -99,23 +99,23 @@ Let's begin!!
    4. Then, we’ll select all the columns, except the “Name” column, in order that match up with the ordering of columns in the “AggregatedWeatherData” dataset. This must be done so that when unionizing, the tool can correctly match up the common columns and unionize the rows. 
    
    Here is the following order of the columns:
-      1. Zip Code 
-      2. Country
-      3. Date Time
-      4. Max Temp
-      5. Min Temp
-      6. Temp
-      7. Wind Chill
-      8. Heat Index
-      9. Precipitation
-      10. Snow
-      11. Snow Depth
-      12. Wind Speed 
-      13. Wind Gust
-      14. Visibility
-      15. Cloud Cover
-      16. Relative Humidity
-      17. Conditions
+    1. Zip Code 
+    2. Country
+    3. Date Time
+    4. Max Temp
+    5. Min Temp
+    6. Temp
+    7. Wind Chill
+    8. Heat Index
+    9. Precipitation
+    10. Snow
+    11. Snow Depth
+    12. Wind Speed 
+    13. Wind Gust
+    14. Visibility
+    15. Cloud Cover
+    16. Relative Humidity
+    17. Conditions
 
 
 
