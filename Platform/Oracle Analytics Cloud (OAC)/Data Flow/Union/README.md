@@ -73,10 +73,50 @@ Let's begin!!
 ![A_DataFlowPage](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_DataFlowPage.png)
 
 2. Before moving on, I’ll explain the Data Flow page: 
-   1. Top – Data Flow Architecture, the flow of your data and transformations applied
-   2. Left – Data Flow Steps, basically different transformations you can apply to your data
-   3. Middle – Data Flow Steps Extra Parameters, specify what you want 
-   4. Bottom – Preview of Data, shows most current version of data (even after transformations)
+   1. **Top** – Data Flow Architecture, the flow of your data and transformations applied
+   2. **Left** – Data Flow Steps, basically different transformations you can apply to your data
+   3. **Middle** – Data Flow Steps Extra Parameters, specify what you want 
+   4. **Bottom** – Preview of Data, shows most current version of data (even after transformations)
+
+![A_AddSteps](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_AddSteps.png)
+
+3. Now, we’ll apply some Data Flow Steps to show the capabilities of Data Flow Steps. To add Data Flow Steps, either (1) Click and Drag a Step from the left to the Architecture area or (2) In the Architecture area, hover to the right of an icon and click “+” and select the wanted Data Flow Step. 
+4. To “AggregatedWeatherData”: 
+   1. Nothing. Moving forward this dataset will contain the “final” format, meaning it contains the finalized wanted column format – like naming convention, datatype, etc.
+5. To "NewWeatherData":
+   1. If you remember in the prerequisite, we “Prepared” the “AggregatedWeatherData” dataset – we added an ifnull transformation. We can actually apply this in the Data Flow, removing the need to do this manually for each new dataset we upload… let Data Flow take care of it!
+
+   ![A_TransformColumn](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_TransformColumn.png)
+
+   2. Add the “Transform Column” step. In the Function finder, search “ifnull”, then double click. Add the expression “IFNULL(Wind Chill, 0)”. This will check the Wind Chill column, and if null, replace with the value 0. 
+
+   ![A_SplitColumn](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_SplitColumn.png)
+   
+   3. Next, we’ll also replicate the “Split Columns” and “Select Columns” step we did in the Prerequisite section to the “AggregatedWeatherData” dataset. To unionize, the datasets need to match all columns – Name and Datatype and need to be in the same column order! First, we’ll split the Name Column into columns “Zip Code” and “Country”. 
+
+   ![A_SelectColumns](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_SelectColumns.png)
+   
+   4. Then, we’ll select all the columns, except the “Name” column, in order that match up with the ordering of columns in the “AggregatedWeatherData” dataset. This must be done so that when unionizing, the tool can correctly match up the common columns and unionize the rows. 
+   
+   Here is the following order of the columns:
+      1. Zip Code 
+      2. Country
+      3. Date Time
+      4. Max Temp
+      5. Min Temp
+      6. Temp
+      7. Wind Chill
+      8. Heat Index
+      9. Precipitation
+      10. Snow
+      11. Snow Depth
+      12. Wind Speed 
+      13. Wind Gust
+      14. Visibility
+      15. Cloud Cover
+      16. Relative Humidity
+      17. Conditions
+
 
 
 
