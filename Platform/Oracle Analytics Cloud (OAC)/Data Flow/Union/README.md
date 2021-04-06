@@ -81,6 +81,7 @@ Let's begin!!
 ![A_AddSteps](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_AddSteps.png)
 
 3. Now, we’ll apply some Data Flow Steps to show the capabilities of Data Flow Steps. To add Data Flow Steps, either (1) Click and Drag a Step from the left to the Architecture area or (2) In the Architecture area, hover to the right of an icon and click “+” and select the wanted Data Flow Step. 
+
 4. To “AggregatedWeatherData”: 
    1. Nothing. Moving forward this dataset will contain the “final” format, meaning it contains the finalized wanted column format – like naming convention, datatype, etc.
 5. To "NewWeatherData":
@@ -98,24 +99,32 @@ Let's begin!!
    
    4. Then, we’ll select all the columns, except the “Name” column, in order that match up with the ordering of columns in the “AggregatedWeatherData” dataset. This must be done so that when unionizing, the tool can correctly match up the common columns and unionize the rows. 
    
-   Here is the following order of the columns:
-    1 - Zip Code 
-    2 - Country
-    3 - Date Time
-    4 - Max Temp
-    5 - Min Temp
-    6. Temp
-    7. Wind Chill
-    8. Heat Index
-    9. Precipitation
-    10. Snow
-    11. Snow Depth
-    12. Wind Speed 
-    13. Wind Gust
-    14. Visibility
-    15. Cloud Cover
-    16. Relative Humidity
-    17. Conditions
+   **Here is the following order of the columns**:
+      1. Zip Code 
+      2. Country
+      3. Date Time
+      4. Max Temp
+      5. Min Temp
+      6. Temp
+      7. Wind Chill
+      8. Heat Index
+      9. Precipitation
+      10. Snow
+      11. Snow Depth
+      12. Wind Speed 
+      13. Wind Gust
+      14. Visibility
+      15. Cloud Cover
+      16. Relative Humidity
+      17. Conditions
+
+   ![A_UnionRows](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_UnionRows.png)
+   
+6. Now, we’ll add the “Union Rows” step. Select to “Keep – All rows from Input 1 and Input 2 (Union All)”. What this will do combine both datasets, “AggregatedWeatherData” and “NewWeatherData”.
+
+![A_SaveData](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_SaveData.png)
+
+7. Finally, add the “Save Data” step. Choose the name “AggregatedWeatherData”. This will replace the existing “AggregatedWeatherData”. But, don’t worry, this is done purposefully. Moving forward, we want “AggregatedWeatherData” to be the dataset with combined weather data from different months, and “NewWeatherData” to be the dataset with new fresh Weather data. This way, because we don’t need to rename our datasets, we won’t need to create a new Data Flow and can run the Data Flow on a schedule. Click Save & Run. The Data Flow should start running.
 
 
 
