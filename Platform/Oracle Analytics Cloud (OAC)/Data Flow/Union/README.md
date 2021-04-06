@@ -118,7 +118,7 @@ Let's begin!!
       16. Relative Humidity
       17. Conditions
 
-   ![A_UnionRows](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_UnionRows.png)
+![A_UnionRows](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_UnionRows.png)
    
 6. Now, we’ll add the “Union Rows” step. Select to “Keep – All rows from Input 1 and Input 2 (Union All)”. What this will do combine both datasets, “AggregatedWeatherData” and “NewWeatherData”.
 
@@ -126,6 +126,9 @@ Let's begin!!
 
 7. Finally, add the “Save Data” step. Choose the name “AggregatedWeatherData”. This will replace the existing “AggregatedWeatherData”. But, don’t worry, this is done purposefully. Moving forward, we want “AggregatedWeatherData” to be the dataset with combined weather data from different months, and “NewWeatherData” to be the dataset with new fresh Weather data. This way, because we don’t need to rename our datasets, we won’t need to create a new Data Flow and can run the Data Flow on a schedule. Click Save & Run. The Data Flow should start running.
 
+![A_Check](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_Check.png)
+
+8. Before we move on to scheduling the data flow and using the newly created Data Flow to add new incoming weather data, we’ll check to make sure the Data Flow unionized our data correctly. Go back to your Data Sets and click on “AggregatedWeatherData”. You should see that it contains both November and December data.
 
 
 
