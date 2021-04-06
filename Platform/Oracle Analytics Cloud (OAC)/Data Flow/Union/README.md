@@ -67,10 +67,17 @@ Here is the overall finalized Data Flow Architecture! Lets begin the work to bui
 Let's begin!!
 
 ![A_CreateDataFlow](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_CreateDataFlow.png)
+
 1. Click Create a Data Flow, then Add “AggregatedWeatherData”.
 
 ![A_DataFlowPage](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/A_DataFlowPage.png)
-2. Before moving on, I’ll explain the Data Flow page. 
+
+2. Before moving on, I’ll explain the Data Flow page: 
+   1. Top – Data Flow Architecture, the flow of your data and transformations applied
+   2. Left – Data Flow Steps, basically different transformations you can apply to your data
+   3. Middle – Data Flow Steps Extra Parameters, specify what you want 
+   4. Bottom – Preview of Data, shows most current version of data (even after transformations)
+
 
 
 
