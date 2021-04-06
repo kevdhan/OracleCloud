@@ -99,7 +99,7 @@ Let's begin!!
    4. Then, we’ll select all the columns, except the “Name” column, in order that match up with the ordering of columns in the “AggregatedWeatherData” dataset. This must be done so that when unionizing, the tool can correctly match up the common columns and unionize the rows. 
    
    Here is the following order of the columns:
-    1. Zip Code 
+   1. Zip Code 
     2. Country
     3. Date Time
     4. Max Temp
