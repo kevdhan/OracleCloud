@@ -130,7 +130,18 @@ Let's begin!!
 
 8. Before we move on to scheduling the data flow and using the newly created Data Flow to add new incoming weather data, we’ll check to make sure the Data Flow unionized our data correctly. Go back to your Data Sets and click on “AggregatedWeatherData”. You should see that it contains both November and December data.
 
-
-
-
 ### Steps B: Testing Data Flow with new Weather Data + Scheduling the Data Flow
+Now that we created our Data Flow, we won’t need to touch anything else (other than uploading our new Weather Data – which can technically be automated too if the data was from a Connections and not a local CSV file, but more on that next time!)! We’ll test our Data Flow with new Weather data and even schedule it (further reducing manual clicks)!
+
+Let's Begin!!
+
+![B_ReloadData](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/B_ReloadData.png)
+
+1. Go to your datasets, then on the farthest right of the dataset “NewWeatherData” click on “Actions Menu”.
+2. From here, click Reload Data, and upload the January dataset. 
+
+
+
+
+
+
