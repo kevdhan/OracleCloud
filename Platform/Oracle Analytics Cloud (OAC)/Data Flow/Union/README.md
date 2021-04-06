@@ -55,7 +55,7 @@ Lets begin!!
 3. Upload December Data as "NewWeatherData"
    1. We'll hold off on any transformations for now!
 
-## Actual Steps
+## (2) Actual Steps: Data Flow, Unions, Schedule
 
 ### Steps A: Data Flow + Unionization
 First, we'll create the Data Flow to unionize our datasets.
@@ -140,8 +140,28 @@ Let's Begin!!
 1. Go to your datasets, then on the farthest right of the dataset “NewWeatherData” click on “Actions Menu”.
 2. From here, click Reload Data, and upload the January dataset. 
 
+![B_Run](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/B_Run.png)
 
+3. Then, go to Data Flows, and click on the “Actions Menu” (furthest to the right) of the  Data Flow created in this tutorial, and click Run. But wait!!! We didn’t perform any transformations on the new dataset! Won’t this affect the unionization process? Nope, remember, we added these steps in the Data Flow, so it’s all taken care of.
 
+![B_Verification](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/B_Verification.png)
+
+4. To verify, go to your Data Sets, click on “AggregatedWeatherData”, and verify that it contains all 3 months: November, December, January!
+
+![B_Schedule](https://github.com/kevdhan/OracleCloud/blob/main/Platform/Oracle%20Analytics%20Cloud%20(OAC)/Data%20Flow/Union/images2/B_Schedule.png)
+
+5. To simplify life even further, go back to your Data Flows and click “Actions Menu” again. But, instead of “Run”, click “New Schedule”. Here, you can set a schedule for your Data Flow, where it’ll automatically run based off of the schedule you set!
+
+## (3) Conclusion
+That covers this tutorial! In this tutorial, we unionized weather data from different months using the feature Data Flow within OAC. In addition, we covered topics like adding new data sets, manually preparing the data sets, creating a data flow and using features like Data Flow Steps and Expression Editor to transform our data, and even running this data flow on a schedule.
+
+Hopefully you saw a lot of the benefits of this tool. This can help save you a lot of time by allowing you to reuse transformations (reducing manual tasks) and even running it on a schedule. 
+
+## (4) Documents
+* [Prepare Your Data Set for Analysis](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/enrich-and-transform-data.html)
+* [About Data Flows](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/data-flows.html#GUID-E914E1B4-1D62-44A5-8785-E1ED51DA2F7E)
+* [Merge Rows in a Data Flow]( https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/using-steps.html#GUID-25385368-4B38-47C1-8AA6-36D780719920)
+* [Schedule a Data Flow](https://docs.oracle.com/en/cloud/paas/analytics-cloud/acubi/schedule-data-flow.html#GUID-63084FD8-19DB-4825-873B-5D0E479F9A4A)
 
 
 
