@@ -13,4 +13,35 @@ We will be using the Weather REST API from Weatherstack (previously known as API
 Before we dive into the integration aspect of this tutorial, we need to do some prerequesite steps.
 
 ### (1a) Weatherstack
+Go to [https://weatherstack.com/](https://weatherstack.com/) and create a FREE account. Once created, go to your dashboard. From here, in a separate note/file, take note of:
+
+![1a_WeatherAPI]()
+
+* Your API Access Key
+* The documentation link
+
+### (1b) Oracle Integration Cloud + Policies
+First, if not done already, an Oracle Integration Instance needs to be created.
+Follow these steps to create an Integration Instance:
+* [Policies needed to have ability to create an Integration Instance](https://docs.oracle.com/en/cloud/paas/integration-cloud/oracle-integration-oci/iam-policy-permissions.html)
+* [Actual Steps on Creating an Oracle Integration Instance ](https://docs.oracle.com/en-us/iaas/integration/doc/creating-oracle-integration-instance.html#GUID-930F40E8-5149-4091-9CDA-8E05C8449BA6)
+
+Second, to use all the features needed in the Integration and Visual Builder platforms, we need certain roles:
+
+* Oracle Integration: ServiceDeveloper and ServiceDeployer roles
+* Visual Builder: ServiceDeveloper roles
+
+More info on Access to OIC: [Configuring Access to Oracle Integration Instances](https://docs.oracle.com/en-us/iaas/integration/doc/configuring-access-oracle-integration-instances.html)
+
+More info on User Roles: [Oracle Integration Roles and Privileges](https://docs.oracle.com/en/cloud/paas/integration-cloud/integration-cloud-auton/oracle-integration-cloud-roles-and-privileges.html#GUID-356C84F7-3AE7-4CB0-A5E4-40A4731873EE)
+
+![1b_UserRoles]()
+
+Go to Identity -> Federation -> OracleIdentityCloudService -> your username -> Manage Roles.
+Within Manage Roles, give yourself admin roles for both Integration and Visual Builder (more info on the image below)
+
+![1b_ServiceConsoleURL]()
+
+Lastly, go to your Oracle Integration Details page. From there, copy and save the Service Console URL. This URL will act as the base URL for the Integration Instance connection (more info on this later).
+
 
