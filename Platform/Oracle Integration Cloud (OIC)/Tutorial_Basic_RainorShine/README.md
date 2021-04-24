@@ -51,3 +51,15 @@ This will allow you to utilize the Visual Builder Platform.
 
 ## (2) Steps
 Now that we've got everything setup, we are ready to create connections, integrations, and even a Web Application.
+
+![2_OverallArchitecture]()
+
+The image above shows a high level architecture of this tutorial. You the user, will interact with the front-end (built out on Visual Builder) of the Weather Application to get and visually see the weather data. In the backend, the front-end will call on the integration we created, which in return calls the Weather API to get the necessary weather data.
+
+Let's go ahead and get started!
+
+### (2a) Connections - Creating REST-based Connections
+
+### (2b) Integration - Creating a REST-based Integration
+
+### (2c) Visual Builder - Creating a Web Application
