@@ -2,8 +2,8 @@
 
 Topics this tutorial will go over:
 * Creating REST Connections
-* Creating Integrations (putting 
-* Creating a Web Application through Visual Builder (a built-in low code development platform)
+* Creating an Integration (putting our REST connections in action)
+* Creating a Web Application through Visual Builder (a built-in low code development platform) to call and visualize our created Integration.
 
 The goal of this tutorial is to show the basics of Oracle Integration Cloud: Connections, Integrations, and Visual Builder
 
@@ -13,12 +13,12 @@ We will be using the Weather REST API from Weatherstack (previously known as API
 Before we dive into the integration aspect of this tutorial, we need to do some prerequesite steps.
 
 ### (1a) Weatherstack
-Go to [https://weatherstack.com/](https://weatherstack.com/) and create a FREE account. Once created, go to your dashboard. From here, in a separate note/file, take note of:
+First, we need to gather the necessary information to perform a REST API call to get weather data. Go to [https://weatherstack.com/](https://weatherstack.com/) and create a FREE account. Once created, go to your dashboard. From here, in a separate note/file, take note of:
 
 ![1a_WeatherAPI]()
 
-* Your API Access Key
-* The documentation link
+* Your API Access Key - The API Access Key will authenticate you and allow you to make the API Call and get the requested weather data
+* The documentation link - The documentation link is helpful to see how to use the API (base + relative URLs, required/optional parameters, etc.)
 
 ### (1b) Oracle Integration Cloud + Policies
 First, if not done already, an Oracle Integration Instance needs to be created.
@@ -44,4 +44,10 @@ Within Manage Roles, give yourself admin roles for both Integration and Visual B
 
 Lastly, go to your Oracle Integration Details page. From there, copy and save the Service Console URL. This URL will act as the base URL for the Integration Instance connection (more info on this later).
 
+Third, if not done already, on the Oracle Integration Details Page, enable the Visual Builder functionality.
+* [Enabling Visual Builder for OIC](https://docs.oracle.com/en/cloud/paas/integration-cloud/visual-admin/administering-oracle-visual-builder-oracle-integration.pdf#unique_15)
 
+This will allow you to utilize the Visual Builder Platform.
+
+## (2) Steps
+Now that we've got everything setup, we are ready to create connections, integrations, and even a Web Application.
