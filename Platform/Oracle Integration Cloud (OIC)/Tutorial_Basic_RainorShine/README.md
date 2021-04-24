@@ -38,7 +38,7 @@ More info on User Roles: [Oracle Integration Roles and Privileges](https://docs.
 ![1b_UserRoles]()
 
 Go to Identity -> Federation -> OracleIdentityCloudService -> your username -> Manage Roles.
-Within Manage Roles, give yourself admin roles for both Integration and Visual Builder (more info on the image below)
+Within Manage Roles, give yourself admin roles for both Integration and Visual Builder (more info about Roles in links and image above)
 
 ![1b_ServiceConsoleURL]()
 
