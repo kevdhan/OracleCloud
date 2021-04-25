@@ -68,11 +68,23 @@ We will begin with the integration connection!
 #### (2a.1) Integration Connection - "GetCurrentWeather"
 1. The Integration Connection will be called "GetCurrentWeather". Go to Integrations -> Connections -> Create (new).
 
-**![2a1_CreateGetCurrentWeatherConnection]()**
+![2a1_CreateGetCurrentWeatherConnection]() **GET IMAGE FOR THIS**
 
 3. Give the name "GetCurrentWeather" and choose the role "Trigger and Invoke"
    1. The Trigger and Invoke role allows you to invoke or trigger this connection
-4. 
+
+![2a1_ConnectionType]() **GET IMAGE FOR THIS**
+
+4. In the Connection Properties, select the Connection Type: REST API Base URL, and enter the OIC Service Console URL (the one collected in the prerequisites)
+
+![2a1_SecurityType]() **GET IMAGE FOR THIS**
+
+6. In the Security section, select: Basic Authentication, and enter your OIC Username/Password
+
+![2a1_TestSave]() **GET IMAGE FOR THIS**
+
+8. Click Test to test the connection
+9. Once the connection was tested successfully, click Save.
 
 #### (2b.2) Weather API Connection - "APIXUWeather"
 
