@@ -100,6 +100,17 @@ Now, we will create the connection for the Weather API.
 Now that we have set up the connections for OIC and the Weather API, we can now go ahead and create an integration that will let us use these connections and work with one another.
 
 ### (2b) Integration - Creating a REST-based Integration
+In this section, we will create and configure an integration named "GetWeather". In this integration, we will use the trigger connection (GetWeather) and invoke connection (APIXUWeather) created in Section 2a. Once these connections are added to the integration, we will create a mapper function that maps the request and response parameters between the connections. Then add business identifiers to help us track the integration steps. Lastly, we'll activate the integration and see how to utilize the activated integration. 
+
+1. Go to Integrations, then Integrations. Create a new Integration by clicking Create.
+2. From the Integration Styles, select App Driven Orchestration (App Driven Orchestration Style Integrations are Integrations that are activated by an Application calling/triggering the API endpoint (in this tutorial's case the REST endpoint for the Integration).
+   1. Name: GetWeather
+   2. Identifier: Default 
+   3. Version: Default
+   4. Package: com.oracle.weather ([packages]() **Insert link here for packages** enable you to grooup integrations into a single structure that makes them easy to imporot and export)
+3. Click Create
+4. Now that the integration is created, we will add Connections to the Integration.
+
 #### (2b.1) Add Trigger and Invoke Connections
 #### (2b.2) Map the Data (aka Parameters) between the Connections
 #### (2b.3) Add Business Identifier Fields for Tracking
