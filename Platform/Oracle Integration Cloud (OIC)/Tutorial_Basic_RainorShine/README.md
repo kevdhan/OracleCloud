@@ -67,9 +67,12 @@ We will begin with the integration connection!
 
 #### (2a.1) Integration Connection - "GetCurrentWeather"
 1. The Integration Connection will be called "GetCurrentWeather". Go to Integrations -> Connections -> Create (new).
-2. Give the name "GetCurrentWeather" and choose the role "Trigger and Invoke"
+
+**![2a1_CreateGetCurrentWeatherConnection]()**
+
+3. Give the name "GetCurrentWeather" and choose the role "Trigger and Invoke"
    1. The Trigger and Invoke role allows you to invoke or trigger this connection
-   2. 
+4. 
 
 #### (2b.2) Weather API Connection - "APIXUWeather"
 
