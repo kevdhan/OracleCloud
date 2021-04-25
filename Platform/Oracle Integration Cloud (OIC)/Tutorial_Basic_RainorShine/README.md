@@ -86,10 +86,29 @@ We will begin with the integration connection!
 8. Click Test to test the connection
 9. Once the connection was tested successfully, click Save.
 
-#### (2b.2) Weather API Connection - "APIXUWeather"
+#### (2a.2) Weather API Connection - "APIXUWeather"
+Now, we will create the connection for the Weather API.
+
+1. Create another REST connection (like in Section 2a.1). Call it "APIXUWeather" with the Trigger and Invoke role.
+2. In the Connection Properties, selecth the Connection Type: REST API Base URL, and for the Connection URL, enter: http://api.weatherstack.com/
+   1. You can see that http://api.weatherstack.com/ is the base URL for the Weather API (go to the Weather API documentation link, noted in the Prerequesite Section).
+3. In the Security section, select "No Security Policy"
+   1. The API (Weather API) will manage the security for the connection, so there is no need to add a form of security from the OIC side/perspective.
+4. Test the connection, then once verifying it ran correctly, save the connection.
 
 
+Now that we have set up the connections for OIC and the Weather API, we can now go ahead and create an integration that will let us use these connections and work with one another.
 
 ### (2b) Integration - Creating a REST-based Integration
+#### (2b.1) Add Trigger and Invoke Connections
+#### (2b.2) Map the Data (aka Parameters) between the Connections
+#### (2b.3) Add Business Identifier Fields for Tracking
+#### (2b.4) Activate The Integration
 
 ### (2c) Visual Builder - Creating a Web Application
+#### (2c.1) Create a Service Connection to the OIC Integration
+#### (2c.2) Define the User Interface
+#### (2c.3) Configure the Action Chain to Invoke the Integration
+#### (2c.4) Run the Application
+
+
